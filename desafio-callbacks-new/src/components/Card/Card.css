@@ -1,0 +1,8 @@
+.product-card {
+    width: 250px;
+    height: 250px;
+    color: rgb(73, 72, 72);
+    border: 1px solid rgb(73, 72, 72);;
+    margin: 5px;
+    border-radius: 5px;
+}

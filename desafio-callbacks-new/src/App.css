@@ -1,0 +1,29 @@
+.cards-container {
+    margin: 45px auto;
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.autocomplete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.autocomplete-container input {
+    padding: 12px;
+    margin: 25px;
+    width: 250px;
+    border: 2px solid rgb(73, 72, 72);
+    border-radius: 8px;
+}
+
+.autocomplete-container input::placeholder {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
