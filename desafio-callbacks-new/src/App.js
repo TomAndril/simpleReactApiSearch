@@ -13,7 +13,7 @@ class App extends React.Component {
     };
   }
 
-  async componentWillUpdate() {
+  async componentDidUpdate() {
     const mlData = await fetch(
       `https://api.mercadolibre.com/sites/MLA/search?q=${this.state.headerInputVal}`
     );
@@ -59,12 +59,22 @@ class App extends React.Component {
           {this.state.filteredProducts.length > 0
             ? this.state.filteredProducts.map((elem, key) => {
                 return (
-                  <Card title={elem.title} img={elem.thumbnail} alt={elem.id} key={key} />
+                  <Card
+                    title={elem.title}
+                    img={elem.thumbnail}
+                    alt={elem.id}
+                    key={key}
+                  />
                 );
               })
             : this.state.products.map((elem, key) => {
                 return (
-                  <Card title={elem.title} img={elem.thumbnail} alt={elem.id} key={key} />
+                  <Card
+                    title={elem.title}
+                    img={elem.thumbnail}
+                    alt={elem.id}
+                    key={key}
+                  />
                 );
               })}
         </div>
