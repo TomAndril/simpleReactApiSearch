@@ -2,4 +2,4 @@
 
 ## Check it out at:
 
-[Deployed on NOW.SH](https://meliapi.now.sh)
+[Deployed on NOW.SH](https://meliapisearch.now.sh/)
